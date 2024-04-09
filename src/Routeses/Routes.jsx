@@ -9,7 +9,7 @@ import UserProfile from "./Components/UserProfile";
 import UpdateProfile from "./Components/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import EstateDetails from "./Components/EstateDetails";
-import Estate from "./Components/Estate";
+
 import Estates from "./Components/Estates";
 
 

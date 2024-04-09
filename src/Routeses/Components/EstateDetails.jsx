@@ -14,13 +14,13 @@ const EstateDetails = () => {
     const {image,segment_name,estate_title,price,status,area,location,description,facilities} =estate;
     return (
         <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-screen  pt-32">
-            <div className="card  shadow-xl lg:mx-10">
+            <div className="card bg-gradient-to-r from-purple-500 to-pink-500  shadow-xl lg:mx-10">
  <h1 className="p-2 text-center md:text-3xl text-2xl font-bold text-white">{segment_name}</h1>
             <div className="md:flex gap-4">
 
 
-<div className="w-2/4 ">
-<figure><img className="rounded-xl p-2" src={image} alt="Shoes" /></figure>
+<div className="md:w-2/4 ">
+<figure><img className="rounded-xl p-2 w-full" src={image} alt="Shoes" /></figure>
 </div>
 
 <div>
