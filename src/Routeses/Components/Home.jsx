@@ -2,6 +2,11 @@ import { Helmet } from "react-helmet-async";
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import 'swiper/css';
 import slide1 from "../../../public/images/single.jpg"
 import slide2 from "../../../public/images/townhouse.jpg"
@@ -54,15 +59,22 @@ const Home = () => {
 {/*  */}
 
 <Swiper
-      spaceBetween={50}
-      slidesPerView={2}
-     
-      onSwiper={(swiper) => console.log(swiper)}
+       // install Swiper modules
+       modules={[Navigation, Pagination, Scrollbar, A11y]}
+       spaceBetween={1}
+       slidesPerView={2}
+       navigation
+       pagination={{ clickable: true }}
+       scrollbar={{ draggable: true }}
     >
-      <SwiperSlide><img src={ slide1} alt="" className="bg-cover"/></SwiperSlide>
-      <SwiperSlide><img src={ slide2} alt="" /></SwiperSlide>
-      <SwiperSlide><img src={ slide3} alt="" /></SwiperSlide>
-      <SwiperSlide><img src={ slide4} alt="" /></SwiperSlide>
+      <SwiperSlide className="text-center"><img src={ slide1} alt="" className=" h-[600px] rounded-xl"/>
+      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Single Family</h1></SwiperSlide>
+      <SwiperSlide><img src={ slide2} className=" h-[600px] rounded-xl" alt="" />
+      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Townhouses</h1></SwiperSlide>
+      <SwiperSlide><img className=" h-[600px] rounded-xl" src={ slide3} alt="" />
+      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Apertments</h1></SwiperSlide>
+      <SwiperSlide className="text-center"><img className=" h-[600px] rounded-xl" src={ slide4} alt="" />
+      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4  text-center rounded-b-lg">Student Livings</h1></SwiperSlide>
      
       ...
     </Swiper>
