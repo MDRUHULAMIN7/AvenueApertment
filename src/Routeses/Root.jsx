@@ -1,14 +1,16 @@
 
 import {Outlet} from "react-router-dom"
-import Navbar from "./Components/Navbar";
+
 
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar2 from "./Components/Navbar2";
 const Root = () => {
     return (
-        <div className="bg-cover bg-no-repeat h-screen" style={{backgroundImage:'url("https://i.ibb.co/FxhCdVQ/bg.jpg")'}} >
-            <Navbar></Navbar>
+        <div  >
+           
+            <Navbar2></Navbar2>
             <Outlet></Outlet>
             <ToastContainer />
         </div>

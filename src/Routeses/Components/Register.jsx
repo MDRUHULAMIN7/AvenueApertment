@@ -7,6 +7,7 @@ import toast from 'react-hot-toast';
 import { IoMdEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import { Helmet } from "react-helmet-async";
+import UpdateProfile from "./UpdateProfile";
 
 
 
@@ -37,11 +38,17 @@ const Register = () => {
           setRegistererror('password should be a Lowercase character')
           return;
         }
-        createUser(email,password,name)
+        createUser(email,password)
         .then(result=>{
             console.log(result)
-         
-
+         UpdateProfile(result.user,{
+          displayName:name,
+          PhotoUrl: photourl
+         })
+         .then(()=>{
+  console.log('profile updated');
+         })
+.catch()
             e.target.reset();
             navigate('/')
             toast('Register Succesgully')

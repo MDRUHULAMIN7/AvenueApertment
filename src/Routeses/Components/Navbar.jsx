@@ -3,12 +3,15 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Prrovider/AuthProvider";
 
 import toast from 'react-hot-toast';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
 
 
 const Navbar = () => {
 
    
    const{user,logOut,loading}=useContext(AuthContext)
+ 
    if(loading){
       return <div className="flex justify-center items-center mx-auto  mt-24"><span className="loading loading-spinner text-primary"></span>
       <span className="loading loading-spinner text-secondary"></span>
@@ -92,8 +95,16 @@ toast.success('LogOut Succesfully')
             <div
             className="flex
             justify-center items-center gap-3
-         " ><img className="w-10 h-10 rounded-full " src={user.
-               photoURL} alt="" />
+         " >
+            <div>
+            <Tippy content={user.displayName}>
+               
+               <img className="w-10 h-10 rounded-full " src={user.
+                  photoURL} alt="" />
+               </Tippy>
+               
+            </div>
+           
               
                  <a className="btn" onClick={HandleSignOut}>SignOut</a></div> : 
                  <Link to={'/login'}> <a className="btn">Login</a></Link>
