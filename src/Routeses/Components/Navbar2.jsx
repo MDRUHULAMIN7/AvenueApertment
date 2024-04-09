@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Prrovider/AuthProvider";
+import 'animate.css';
 
 import toast from 'react-hot-toast';
 import Tippy from '@tippy.js/react';
@@ -32,7 +33,8 @@ const Navbar2 = () => {
     return (
         <div className="navbar bg-purple-300  flex justify-between ">
        
-        <Link to={'/'}>   <a className=" lg:text-3xl md:text-2xl text-xl  text-gradient-to-r from-cyan-500 to-blue-500">AveneuApertment</a></Link>
+        <Link to={'/'}>   <a className=" lg:text-3xl md:text-2xl text-xl  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
+        ">AveneuApertment</a></Link>
 
 {/*  */}
 <div className="navbar-start">
@@ -59,16 +61,20 @@ isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3
           </div>       
 {/*  */}
 <div className="navbar-center hidden lg:flex lg:pr-[555px] md:pr-[144px]">
-          <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-3">
+          <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-3 ">
            
 
            <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/"} >Home</NavLink>
+        isPending ? 'text-blue-500 animate__bounceOutLeft' : isActive ? 'text-white animate__bounceOutLeft bg-blue-700 rounded-lg px-3 py-2' :'' } to={"/"} >Home</NavLink>
         <NavLink className={({isActive,isPending})=>
 isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/register"} >Register</NavLink>
  
          {user &&     <NavLink className={({isActive,isPending})=>
         isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/updateprofile"} >Update Profile</NavLink> }
+
+        
+<NavLink className={({isActive,isPending})=>
+isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/userprofile"} >User Profile</NavLink>
 
 
         
@@ -107,9 +113,7 @@ isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3
 
 {/*  */}
 
-<NavLink className={({isActive,isPending})=>
-isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/userprofile"} >User Profile</NavLink>
-<button onClick={HandleSignOut}>LogOut</button>
+<button className="btn-secondary" onClick={HandleSignOut}>LogOut</button>
 
 {/*  */}
 
