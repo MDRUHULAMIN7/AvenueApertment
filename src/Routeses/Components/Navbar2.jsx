@@ -30,7 +30,7 @@ const Navbar2 = () => {
      }
 
     return (
-        <div className="navbar bg-purple-300 sticky  flex justify-between ">
+        <div className="navbar bg-purple-300  flex justify-between ">
        
         <Link to={'/'}>   <a className=" lg:text-3xl md:text-2xl text-xl font-bold text-white">AveneuApertment</a></Link>
 

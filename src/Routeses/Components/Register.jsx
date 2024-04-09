@@ -45,10 +45,12 @@ const Register = () => {
           displayName:name,
           PhotoUrl: photourl
          })
-         .then(()=>{
-  console.log('profile updated');
+         .then(result=>{
+  console.log('profile updated',result);
          })
-.catch()
+.catch(error=>{
+  console.error(error)
+})
             e.target.reset();
             navigate('/')
             toast('Register Succesgully')

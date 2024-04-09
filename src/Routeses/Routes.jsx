@@ -8,6 +8,7 @@ import ErrorPage from "./ErrorPage";
 import UserProfile from "./Components/UserProfile";
 import UpdateProfile from "./Components/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
+import EstateDetails from "./Components/EstateDetails";
 
 
 const router=createBrowserRouter([
@@ -32,6 +33,10 @@ const router=createBrowserRouter([
             {
                 path:'/updateprofile',
                 element:<UpdateProfile></UpdateProfile>
+            },{
+                path:'/estate/:id',
+                element:<EstateDetails></EstateDetails>,
+                loader:()=>fetch('../../public/Estate.json')
             }
         ]
     }

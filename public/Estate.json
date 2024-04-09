@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Spacious Single-Family Home with Garden",
+      "segment_name": "Single-family homes",
+      "description": "A spacious single-family home featuring a large garden, perfect for families seeking a peaceful retreat.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Suburban neighborhood, Chicago, Illinois",
+      "facilities": ["living room", "kitchen", "backyard", "garage"],
+      "image": "https://i.ibb.co/9nyGsCz/pexels-luis-yanez-206172.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Townhouse in Urban Setting",
+      "segment_name": "Townhouses",
+      "description": "A modern townhouse located in a vibrant urban setting, offering contemporary design and convenient access to amenities.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Downtown area, San Francisco, California",
+      "facilities": ["living room", "kitchen", "rooftop terrace", "garage"],
+      "image": "https://i.ibb.co/8z3zpTb/pexels-pixabay-415687.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": 3,
+      "estate_title": "Luxurious Apartment with City Views",
+      "segment_name": "Apartments",
+      "description": "A luxurious apartment boasting stunning city views, high-end finishes, and upscale amenities.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Midtown Manhattan, New York City, New York",
+      "facilities": ["living room", "swimming pool", "gym", "concierge service"],
+      "image": "https://i.ibb.co/7z79VDT/pexels-expect-best-323780.jpg",
+      "view_property_button": "View Property"
+    },
+    {
+      "id": 4,
+      "estate_title": "Student Housing near Campus",
+      "segment_name": "Student housing",
+      "description": "Convenient student housing located within walking distance to campus, offering modern amenities and a vibrant community atmosphere.",
+      "price": "$1,200/month",
+      "status": "rent",
+      "area": "800 sq ft",
+      "location": "University district, Austin, Texas",
+      "facilities": ["bedroom", "study area", "shared kitchen", "laundry facilities"],
+      "image": "https://i.ibb.co/9yRxsQL/pexels-pixabay-277667.jpg",
+      "view_property_button": "View Property"
+    }
+  ]
