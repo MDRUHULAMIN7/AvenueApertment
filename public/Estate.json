@@ -8,7 +8,7 @@
       "status": "sale",
       "area": "3000 sq ft",
       "location": "Suburban neighborhood, Chicago, Illinois",
-      "facilities": ["living room", "kitchen", "backyard", "garage"],
+      "facilities": ["living room", "kitchen", "backyard", "garage","playground"],
       "image": "https://i.ibb.co/9nyGsCz/pexels-luis-yanez-206172.jpg",
       "view_property_button": "View Property"
     },
@@ -21,7 +21,7 @@
       "status": "sale",
       "area": "2500 sq ft",
       "location": "Downtown area, San Francisco, California",
-      "facilities": ["living room", "kitchen", "rooftop terrace", "garage"],
+      "facilities": ["living room", "kitchen", "rooftop terrace", "garage","Mosque"],
       "image": "https://i.ibb.co/8z3zpTb/pexels-pixabay-415687.jpg",
       "view_property_button": "View Property"
     },
@@ -34,7 +34,7 @@
       "status": "rent",
       "area": "1200 sq ft",
       "location": "Midtown Manhattan, New York City, New York",
-      "facilities": ["living room", "swimming pool", "gym", "concierge service"],
+      "facilities": ["living room", "swimming pool", "gym", "concierge service","Auditoriam"],
       "image": "https://i.ibb.co/7z79VDT/pexels-expect-best-323780.jpg",
       "view_property_button": "View Property"
     },
@@ -47,7 +47,7 @@
       "status": "rent",
       "area": "800 sq ft",
       "location": "University district, Austin, Texas",
-      "facilities": ["bedroom", "study area", "shared kitchen", "laundry facilities"],
+      "facilities": ["bedroom", "study area", "shared kitchen", "laundry facilities","Library"],
       "image": "https://i.ibb.co/9yRxsQL/pexels-pixabay-277667.jpg",
       "view_property_button": "View Property"
     }

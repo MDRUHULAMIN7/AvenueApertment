@@ -9,6 +9,8 @@ import UserProfile from "./Components/UserProfile";
 import UpdateProfile from "./Components/UpdateProfile";
 import PrivateRoute from "./PrivateRoute";
 import EstateDetails from "./Components/EstateDetails";
+import Estate from "./Components/Estate";
+import Estates from "./Components/Estates";
 
 
 const router=createBrowserRouter([
@@ -26,7 +28,12 @@ const router=createBrowserRouter([
             },{
                 path:'/login',
                 element:<Login></Login>
-            },{
+            },
+            {
+                path:'/estate',
+                element:<Estates></Estates>
+            },
+            {
                 path:'/userprofile',
                 element:<PrivateRoute><UserProfile></UserProfile></PrivateRoute>
             },
@@ -35,7 +42,7 @@ const router=createBrowserRouter([
                 element:<UpdateProfile></UpdateProfile>
             },{
                 path:'/estate/:id',
-                element:<EstateDetails></EstateDetails>,
+                element:<PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
                 loader:()=>fetch('../../public/Estate.json')
             }
         ]
