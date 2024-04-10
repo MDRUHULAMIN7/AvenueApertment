@@ -60,7 +60,7 @@ isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3
           
           </div>       
 {/*  */}
-<div className="navbar-center hidden lg:flex lg:pr-[555px] md:pr-[144px]">
+<div className="navbar-center hidden lg:flex lg:pr-[555px] md:pr-[144px] " data-aos="fade-right">
           <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-3 ">
            
 
@@ -90,10 +90,10 @@ isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3
                   !user ?
                   <div  className=" border-2 border-purple-600 pt-2 pb-2 pr-2 pl-1 rounded-lg text-white bg-purple-500 mt-2"><Link to={'/login'}className=""> Login</Link> </div>
 
-                   :    <div  className="w-10 rounded-full">
+                   :    <div  className="w-12 h-12 rounded-full border-purple-800 border-2 mr-2">
                     <Tippy content={user.displayName}>
                        
-                       <img className="w-10  rounded-full " src={user.
+                       <img className="w-10   rounded-full " src={user.
                           photoURL} alt="" />
                        </Tippy>
                        
@@ -108,12 +108,12 @@ isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3
 
             {
                 user ?
-<ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 space-y-4">
+<ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-purple-300 rounded-box w-52 space-y-4">
 
 
 {/*  */}
 
-<button className="btn-secondary" onClick={HandleSignOut}>LogOut</button>
+<button className="btn-secondary rounded-full w-fit px-3 py-2 bg-purple-800 text-white" onClick={HandleSignOut}>LogOut</button>
 
 {/*  */}
 

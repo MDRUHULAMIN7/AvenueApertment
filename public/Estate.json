@@ -50,5 +50,64 @@
       "facilities": ["bedroom", "study area", "shared kitchen", "laundry facilities","Library"],
       "image": "https://i.ibb.co/9yRxsQL/pexels-pixabay-277667.jpg",
       "view_property_button": "View Property"
+    }, {
+      "id": 5,
+      "estate_title": "Traditional Family Home with Garden",
+      "segment_name": "Luxury Homes",
+      "description": "A traditional family home with a beautiful garden, ideal for those seeking classic charm and ample outdoor space.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Suburban neighborhood, Atlanta, Georgia",
+      "facilities": ["living room", "kitchen", "backyard", "garage"],
+      "image": "https://i.ibb.co/KqyNCk5/lotus-design-n-print-Wgk-A3-CSFrjc-unsplash.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Chic Townhouse in Historic District",
+      "segment_name": "senior living communities",
+      "description": "A chic townhouse located in a historic district, featuring elegant architecture and modern interiors.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Old Town, Alexandria, Virginia",
+      "facilities": ["living room", "kitchen", "patio", "garage"],
+      "image": "https://i.ibb.co/37nq5qy/lotus-design-n-print-r-y2-VBv-EOIE-unsplash.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Luxury High-Rise Apartment",
+      "segment_name": "Urban Apartments",
+      "description": "A luxury high-rise apartment offering panoramic city views, premium amenities, and unparalleled convenience.",
+      "price": "$5,000/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Downtown Los Angeles, California",
+      "facilities": ["living room", "swimming pool", "gym", "concierge service"],
+      "image": "https://i.ibb.co/jhHtQgF/lotus-design-n-print-r-y2-VBv-EOIE-unsplash.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Modern Student Housing Complex",
+      "segment_name": "Historic Townhouses",
+      "description": "Modern student housing complex with fully furnished apartments, study lounges, and recreational facilities.",
+      "price": "$1,500/month",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "University district, Boston, Massachusetts",
+      "facilities": ["bedroom", "study area", "shared kitchen", "fitness center"],
+      "image": "https://i.ibb.co/SRWD9WX/lotus-design-n-print-r-y2-VBv-EOIE-unsplash.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Ranch-style Family Home with Pool",
+      "segment_name": "vacation rentals",
+      "description": "A ranch-style family home with a refreshing pool, offering the perfect blend of comfort and relaxation.",
+      "price": "$700,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Suburban neighborhood, Dallas, Texas",
+      "facilities": ["living room", "kitchen", "swimming pool", "garage"],
+      "image": "https://i.ibb.co/Z1D0R5k/lotus-design-n-print-r-y2-VBv-EOIE-unsplash.jpg"
     }
   ]
