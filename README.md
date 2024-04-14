@@ -3,7 +3,7 @@
 #Five Bullet Points:
 *Navbar,
 *Banner,
-*Fetured,
+*About,
 *Estate,
 *Footer.
 
