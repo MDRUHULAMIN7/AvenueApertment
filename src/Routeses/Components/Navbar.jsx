@@ -5,7 +5,7 @@ import icons from '../../../public/images/icon.png'
 import toast from 'react-hot-toast';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
-
+import 'animate.css';
 
 const Navbar = () => {
 
@@ -60,11 +60,12 @@ isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3 ' :''}
             </ul>
           </div>
 
-          <Link to={'/'}>   <a className="  lg:text-2xl md:text-xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
+          <Link  to={'/'}>   <a className="   lg:text-2xl md:text-xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
         "> <h1 className="flex text-white"><img className="w-6 mr-3" src={icons} alt="" />
        <span className="">A</span>veneu 
         </h1> 
-        <h1 className="text-black">  <span className="">A</span>pertment</h1>
+        <h1 className="text-black 
+        animate__bounce">  <span className="">A</span>pertment</h1>
        </a></Link>
         
         </div>

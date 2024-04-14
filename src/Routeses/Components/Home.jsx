@@ -6,6 +6,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'animate.css';
 
 // import { EffectFade } from 'swiper/modules';
 
@@ -23,12 +24,12 @@ const Home = () => {
         <div className="bg-no-repeat  bg-contain" style={{backgroundImage:'url("https://i.ibb.co/XFpC7hc/istockphoto-1289383957-612x612.jpg")'}}>
           <Helmet> <title>AvenueApartment |Home</title></Helmet>
           <div className="lg:flex gap-4 lg:pt-8 mx-10">
-            <div className="w-3/1 lg:leading-8 lg:mt-32 text-center mx-auto "    >
-    <h1 className="lg:text-7xl md:text-6xl text-4xl font-bold   "> Avenue 
+            <div className="w-3/1 lg:leading-8 lg:mt-44 text-center mx-auto "    >
+    <h1 className="lg:text-7xl md:text-6xl text-4xl font-bold animate__bounceIn"> Avenue 
           </h1>
-    <h1 className="lg:text-7xl  md:text-6xl text-4xl font-bold "  data-aos="fade-left"> Apartment
-          <span><h1  data-aos="zoom-in-down" className="text-xl mt-4 font-normal text-purple-500">For You safe Housing</h1></span></h1>
-          <button className="btn bg-purple-600 text-white font-semibold ">Boking Now</button>
+    <h1 className="lg:text-7xl  md:text-6xl text-4xl font-bold animate__animated  animate__bounceIn animate__slower	2s"  > Apartment
+          <span><h1  className="text-xl mt-4 font-normal text-white ">For You safe Housing</h1></span></h1>
+          <button className="btn bg-purple-600 text-white font-semibold mt-5 animate__animated animate__backInLeft 	animate__slower	2s">Boking Now</button>
             </div>
 
             <div className="lg:w-2/3 md:mx-auto  md:pt-7 pt-4 lg:h-[600px] md:h-[450px] h-[350px]">
