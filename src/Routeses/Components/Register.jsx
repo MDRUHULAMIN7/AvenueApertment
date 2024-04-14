@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 import { IoMdEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import { Helmet } from "react-helmet-async";
-import UpdateProfile from "./UpdateProfile";
+// import UpdateProfile from "./UpdateProfile";
 
 
 
@@ -16,14 +16,14 @@ const Register = () => {
   const[RegisterError,setRegistererror]=useState('');
   const [showPassword,setShowPassword]=useState(false)
 
-    const{createUser}=useContext(AuthContext)
+    const{createUser,setUser,updateUserProfile}=useContext(AuthContext)
     const navigate = useNavigate()
 
     const HandleRegister=e=>{
         e.preventDefault();
         const name=e.target.name.value;
         const email=e.target.email.value;
-        const photourl=e.target.photourl.value;
+        const image=e.target.photourl.value;
         const password=e.target.password.value;
         setRegistererror('');
         if(password.length < 6){
@@ -41,30 +41,28 @@ const Register = () => {
         createUser(email,password)
         .then(result=>{
             console.log(result)
-         UpdateProfile(result.user,{
-          displayName:name,
-          PhotoUrl: photourl
-         })
-         .then(result=>{
-  console.log('profile updated',result);
-         })
-.catch(error=>{
-  console.error(error)
-})
-            e.target.reset();
-            navigate('/')
+
+            updateUserProfile(name,image)
+            .then(()=>{
+
+              e.target.reset();
+              navigate('/')
+            })
+            setUser(result.user)
+    
+          
             toast('Register Succesgully')
             return;
         })
         .catch(error=>{
           console.error(error)
             toast(error)
-            return;
+            
         })
-        console.log(name,email,photourl,password);
+        console.log(name,email,image,password);
     }
     return (
-        <div className="hero ">
+        <div className="hero bg-gradient-to-r from-violet-500 to-fuchsia-500">
 
           <Helmet> <title>AvenueApartment | Register</title></Helmet>
         <div className="hero-content flex-col ">
@@ -72,7 +70,7 @@ const Register = () => {
             <h1 className="text-5xl font-bold">Register now!</h1>
           
           </div>
-          <div className="card shrink-0 w-full  shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full  shadow-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500">
             <form onSubmit={HandleRegister} className="card-body">
               <div className="form-control">
                 <label className="label">

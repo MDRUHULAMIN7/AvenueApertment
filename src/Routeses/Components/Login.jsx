@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Prrovider/AuthProvider";
 import toast from 'react-hot-toast';
 
 import { IoMdEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
-import { Link,useNavigate } from "react-router-dom";
+import { Link,useLocation,useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 
@@ -14,9 +14,10 @@ const Login = () => {
 
   const navigate=useNavigate()
 
-    const{signInUser,signInGoogle,signInGithub}=useContext(AuthContext)
+    const{signInUser,signInGoogle,signInGithub,user}=useContext(AuthContext)
+    const location=useLocation()
 
-    const HandleRegister=e=>{
+    const HandleLogin=e=>{
         e.preventDefault();
        
         const email=e.target.email.value;
@@ -45,6 +46,8 @@ const Login = () => {
         .catch(error=>{
           console.error(error)
             toast(error.message)
+        
+         
         })
         console.log(email,password);
     }
@@ -64,14 +67,22 @@ const Login = () => {
     const HandleGithubLogin=()=>{
       signInGithub()
       .then(result=>{
-        console.log(result);
+        console.log(result.user);
+        navigate('/')
+       
       })
       .then(error=>{
         console.error(error)
       })
     }
+
+    useEffect(()=>{
+      if(user){
+navigate(location.state)
+      }
+    },[user])
     return (
-      <div className="hero ">
+      <div className="hero  bg-gradient-to-r from-violet-500 to-fuchsia-500">
         
        
       <div className="hero-content flex-col ">
@@ -79,21 +90,21 @@ const Login = () => {
           <h1 className="text-5xl font-bold">Login now!</h1>
         <Helmet> <title>AvenueApartment |Login</title></Helmet>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form onSubmit={HandleRegister} className="card-body">
+        <div className="card shrink-0 w-full max-w-sm shadow-2xl  bg-gradient-to-r from-violet-500 to-fuchsia-500">
+          <form onSubmit={HandleLogin} className="card-body">
           
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
-              <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+              <input type="email" name="email" placeholder="email" className="input input-bordered " required />
             </div>
            
             <div className="form-control relative">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input type={showPassword ? "text ":"password" } placeholder="password" name="password" className="input input-bordered" required />
+              <input type={showPassword ? "text ":"password" } placeholder="password" name="password" className="input input-bordered " required />
               <span className="absolute top-12 right-6"
                onClick={()=>setShowPassword(!showPassword)}>
                 {showPassword ? <IoMdEye></IoMdEye> :<IoIosEyeOff></IoIosEyeOff>}
@@ -127,7 +138,7 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
 
-            <p className="text-center font-bold">Do not have an account ? <Link className="text-purple-600 font-bold underline" to={'/register'}>Register</Link></p>
+            <p className="text-center font-bold">Do not have an account ? <Link className="text-primary font-bold underline" to={'/register'}>Register</Link></p>
           </form>
 
           {RegisterError && <p className="text-center text-red-600 font-semibold">{RegisterError}</p>}

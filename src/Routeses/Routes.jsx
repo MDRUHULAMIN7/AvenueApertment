@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import EstateDetails from "./Components/EstateDetails";
 
 import Estates from "./Components/Estates";
+import About from "./Components/About";
 
 
 const router=createBrowserRouter([
@@ -39,11 +40,14 @@ const router=createBrowserRouter([
             },
             {
                 path:'/updateprofile',
-                element:<UpdateProfile></UpdateProfile>
+                element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },{
                 path:'/estate/:id',
                 element:<PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
                 loader:()=>fetch('../../public/Estate.json')
+            },{
+                path:'/about',
+                element:<PrivateRoute><About></About></PrivateRoute>
             }
         ]
     }

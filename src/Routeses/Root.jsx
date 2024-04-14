@@ -5,13 +5,15 @@ import {Outlet} from "react-router-dom"
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Navbar2 from "./Components/Navbar2";
+
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 const Root = () => {
     return (
         <div  >
-           
-            <Navbar2></Navbar2>
+           <Navbar></Navbar>
             <Outlet></Outlet>
+            <Footer></Footer>
             <ToastContainer />
         </div>
     );

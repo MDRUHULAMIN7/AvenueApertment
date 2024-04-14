@@ -4,7 +4,9 @@ import { IoLocationSharp } from "react-icons/io5";
 const Estate = ({estate}) => {
     const {id,image,segment_name,estate_title,price,status,area,location} =estate;
     return (
-        <div className="card bg-gradient-to-r from-purple-500 to-pink-500 shadow-xl h-[600px] my-10"  data-aos="zoom-in" data-aos-duration="2000">
+      
+        <div className="mt-20">
+          <div className="card  bg-gradient-to-r  from-purple-500 to-pink-500 shadow-xl  "  data-aos="zoom-in" data-aos-duration="2000">
          <h1 className="p-2 text-center md:text-3xl text-2xl font-bold text-primary">{segment_name}</h1>
         <figure><img className="rounded-xl p-2 h-[250px] w-full" src={image} alt="Shoes" /></figure>
         <hr />
@@ -25,7 +27,7 @@ const Estate = ({estate}) => {
             </div>
             <div>
             <Link to={`/estate/${id}`}>
-            <button className="btn btn-primary">View Property</button>
+            <button className="btn btn-primary ml-2">View Property</button>
             </Link>
             </div>
           
@@ -34,6 +36,7 @@ const Estate = ({estate}) => {
           </div>
         </div>
       </div>
+        </div>
     );
 };
 

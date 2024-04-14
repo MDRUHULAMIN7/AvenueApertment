@@ -14,7 +14,7 @@ const EstateDetails = () => {
     console.log(estate);
     const {image,segment_name,estate_title,price,status,area,location,description,facilities} =estate;
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-screen  pt-32">
+        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500   py-12">
           <Helmet> <title>AvenueApartment |EstateDetails</title></Helmet>
             <div className="card bg-gradient-to-r from-purple-500 to-pink-500  shadow-xl lg:mx-10">
  <h1 className="p-2 text-center md:text-3xl text-2xl font-bold text-white">{segment_name}</h1>

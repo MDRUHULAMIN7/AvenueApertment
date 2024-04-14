@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Prrovider/AuthProvider";
-
+import icons from '../../../public/images/icon.png'
 import toast from 'react-hot-toast';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
@@ -35,7 +35,7 @@ toast.success('LogOut Succesfully')
 
     return (
       
-        <div className="navbar ">
+        <div className="navbar bg-gradient-to-r from-purple-500 to-pink-500">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,72 +44,97 @@ toast.success('LogOut Succesfully')
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             
             <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/"} >Home</NavLink>
+        isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3' :''} to={"/"} >Home</NavLink>
           
-           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/register"} >Register</NavLink>
-         <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/userprofile"} >User Profile</NavLink>
-           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/login"} >Login</NavLink>
+            
+            <NavLink className={({isActive,isPending})=>
+        isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3' :''} to={"/about"} >About</NavLink>
+          
+          <NavLink className={({isActive,isPending})=>
+isPending ? 'text-blue-500' : isActive ? 'text-green-500 rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>
 
+<NavLink className={({isActive,isPending})=>
+isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3 ' :''} to={"/userprofile"} >User Profile</NavLink>
            {user &&     <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/updateprofile"} >Update Profile</NavLink> }
+        isPending ? 'text-blue-500' : isActive ? 'text-green-500 rounded-lg px-3 ' :''} to={"/updateprofile"} >Update Profile</NavLink> }
             </ul>
           </div>
 
-          <Link to={'/'}>   <a className=" lg:text-3xl md:text-2xl text-xl font-bold">AveneuApertment</a></Link>
+          <Link to={'/'}>   <a className="  lg:text-2xl md:text-xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
+        "> <h1 className="flex text-white"><img className="w-6 mr-3" src={icons} alt="" />
+       <span className="">A</span>veneu 
+        </h1> 
+        <h1 className="text-black">  <span className="">A</span>pertment</h1>
+       </a></Link>
         
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-3">
+          <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-4">
            
-
-           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/"} >Home</NavLink>
-
-       
-         
-           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/register"} >Register</NavLink>
-           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/login"} >Login</NavLink>
-
-  <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/userprofile"} >User Profile</NavLink> 
+          <NavLink className={({isActive,isPending})=>
+        isPending ? 'text-blue-500 animate__bounceOutLeft' : isActive ? 'text-white animate__bounceOutLeft  rounded-lg px-3 ' :'' } to={"/"} >Home</NavLink>
+        
+            
+        <NavLink className={({isActive,isPending})=>
+        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3' :''} to={"/about"} >About</NavLink>
+          
+        <NavLink className={({isActive,isPending})=>
+isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>
+ 
          {user &&     <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white bg-blue-700 rounded-lg px-3 py-2' :''} to={"/updateprofile"} >Update Profile</NavLink> }
+        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/updateprofile"} >Update Profile</NavLink> }
+
+        
+<NavLink className={({isActive,isPending})=>
+isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/userprofile"} >User Profile</NavLink>
 
 
         
           </ul>
         </div>
-        <div className="navbar-end">
-       
 
-         {
-            user?
-            
-            
-            
-            <div
-            className="flex
-            justify-center items-center gap-3
-         " >
-            <div>
-            <Tippy content={user.displayName}>
-               
-               <img className="w-10 h-10 rounded-full " src={user.
-                  photoURL} alt="" />
-               </Tippy>
-               
-            </div>
-           
-              
-                 <a className="btn" onClick={HandleSignOut}>SignOut</a></div> : 
-                 <Link to={'/login'}> <a className="btn">Login</a></Link>
+          <div className="navbar-end ">
+      
+          <div className="dropdown dropdown-end mr-5">
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+              <div>
+                {
+                  !user ?
+                  <div  className=" border-2 border-purple-600 pt-2 pb-2 pr-2 pl-1 rounded-lg text-white bg-purple-500 mt-2"><Link to={'/login'}className=""> Login</Link> </div>
+
+                   :    <div  className="w-12 h-12 rounded-full border-purple-800 border-2 mr-2">
+                    <Tippy content={user.displayName}>
+                       
+                       <img className="rounded-full" src={user.photoURL} alt="" />
+                       </Tippy>
+                       
+                    </div>
          }
-         
+                
+
+              
+     
+              </div>
+            </div>
+
+            {
+                user ?
+<ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-purple-300 rounded-box w-52 space-y-4">
+
+
+{/*  */}
+<h1 className="text-xl text-center text-white">{user.displayName}</h1>
+
+<button className="btn-secondary rounded-full w-fit px-3 py-2 mx-auto bg-purple-800 text-white" onClick={HandleSignOut}>LogOut</button>
+
+{/*  */}
+
+</ul>:<div><h1></h1></div>
+
+
+            }
+            
+          </div>
         </div>
   
       </div>
