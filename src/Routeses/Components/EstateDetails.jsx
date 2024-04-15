@@ -14,21 +14,23 @@ const EstateDetails = () => {
     console.log(estate);
     const {image,segment_name,estate_title,price,status,area,location,description,facilities} =estate;
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500   py-12">
+        <div  className="bg-gradient-to-r from-violet-500 to-fuchsia-500   py-12">
           <Helmet> <title>AvenueApartment |EstateDetails</title></Helmet>
-            <div className="card bg-gradient-to-r from-purple-500 to-pink-500  shadow-xl lg:mx-10">
+            <div data-aos="zoom-in" data-aos-duration='1000' className="card bg-gradient-to-r from-purple-500 to-pink-500  shadow-xl lg:mx-10 md:mx-4 mx-2">
  <h1 className="p-2 text-center md:text-3xl text-2xl font-bold text-white">{segment_name}</h1>
-            <div className="md:flex gap-4">
+            <div className="lg:flex gap-4">
 
 
-<div className="md:w-2/4 ">
-<figure><img className="rounded-xl p-2 w-full" src={image} alt="Shoes" /></figure>
+<div  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration='2000'data-aos-delay='1000' className="lg:w-2/4 ">
+<figure><img     className="rounded-xl p-2 w-full" src={image} alt="Shoes" /></figure>
+
 </div>
 
 <div>
  
-<div className="card-body">
-          <h2 className="card-title mb-5 md:text-3xl text-2xl text-white font-bold">{estate_title}</h2>
+<div className="card-body" data-aos="fade-left" data-aos-duration='2000'data-aos-delay='1000'>
+          <h2 data-aos="fade-right" className="card-title mb-5 md:text-3xl text-2xl text-white font-bold">{estate_title}</h2>
 <hr />
     
         <p className="text-xl text-white ">{description}</p>
@@ -54,7 +56,7 @@ const EstateDetails = () => {
           <span>      Price : {price}</span>
             </div>
             <div>
-            <Link to={'/estate'}>
+            <Link to={'/estates'}>
             <button className="btn btn-primary">View All Propertys</button>
             </Link>
             </div>

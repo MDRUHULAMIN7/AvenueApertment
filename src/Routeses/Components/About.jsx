@@ -6,9 +6,9 @@ const About = () => {
     return (
         <div className="" >
             <Helmet><title>AvenueApartment | About</title></Helmet>
-            <div className="text-center pt-20   bg-no-repeat bg-cover " style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
+            <div   className="text-center pt-20   bg-no-repeat bg-cover " style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
 
-                <div className="border-2 border-blue-500 w-fit py-12 px-5 mx-auto ">
+                <div data-aos="zoom-in-right" data-aos-duration="1000" className="border-2 border-blue-500 w-fit py-12 px-5 mx-auto ">
                 <h1 className="text-5xl md:text-6xl lg:text-8xl font-semibold"><span className="text-white mx-5 ">About</span>us</h1>
                 <p className="text-xl text-black mt-20 text-center space-y-4 line-clamp-6">AvenueApartment is a residential property <br /> company operating in West and <br /> Central London.br <br />
 
@@ -16,13 +16,14 @@ Honest and to-the-point, our aim is <br /> to get things done with efficiency <b
                 
                 </div>
                 <div className="lg:flex mt-48 py-16 gap-10 pb-8 px-10 space-y-3  bg-gradient-to-r from-sky-500 to-indigo-500">
-                    <div className="md:flex lg:w-1/2 gap-4">
+                    <div className="md:flex lg:w-1/2 gap-4"  data-aos="fade-up"
+     data-aos-duration="2000">
                         <div className="md:w-1/2  gap-4">
 
-                        <img className="h-72 rounded-2xl" src={pic1} alt="" />
+                        <img  data-aos="zoom-in" className="h-72 rounded-2xl" src={pic1} alt="" />
 
                         </div>
-                        <div className="md:w-1/2 gap-4 my-auto">
+                        <div className="md:w-1/2 gap-4 my-auto"  >
                             <h1 className="text-2xl text-white">
 
                             Management
@@ -34,12 +35,13 @@ They will have usually managed the property for a number of years, which means m
                             </p>
                         </div>
                     </div>
-                    <div className="md:flex lg:w-1/2 gap-4">
+                    <div className="md:flex lg:w-1/2 gap-4" data-aos="fade-up"
+     data-aos-duration="2000"   data-aos-delay="1000">
 
 
-                    <div  className="md:w-1/2 gap-4 md:mt-0 mt-5">
+                    <div  className="md:w-1/2 gap-4 md:mt-0 mt-5" >
 
-<img className="h-72 rounded-2xl" src={pic2} alt="" />
+<img  data-aos="zoom-in" className="h-72 rounded-2xl" src={pic2} alt="" />
 
 </div>
 <div  className="md:w-1/2 gap-4 my-auto">

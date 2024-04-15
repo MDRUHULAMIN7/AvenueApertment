@@ -68,7 +68,7 @@ const Login = () => {
       signInGithub()
       .then(result=>{
         console.log(result.user);
-        navigate('/')
+      
        
       })
       .then(error=>{
@@ -80,7 +80,7 @@ const Login = () => {
       if(user){
 navigate(location.state)
       }
-    },[user])
+    },[user,location.state,navigate])
     return (
       <div className="hero  bg-gradient-to-r from-violet-500 to-fuchsia-500">
         

@@ -27,9 +27,9 @@ const UpdateProfile = () => {
         <div className="h-[64vh] bg-lime-300">
             <Helmet> <title>AvenueApartment | UpdateProfile</title></Helmet>
             <h1 className="lg:text-3xl text-2xl  text-center py-4 text-secondary">Update Your Profile</h1>
-            <div className="w-1/4 mx-auto shadow-2xl rounded-2xl  bg-gradient-to-r from-violet-500 to-fuchsia-500  p-7">
+            <div className="lg:w-1/4 lg:mx-auto mx-4 shadow-2xl rounded-2xl  bg-gradient-to-r from-violet-500 to-fuchsia-500  p-7">
 
-               <h1 className="text-white text-centre mx-auto mb-3">You can update your name and image here</h1>
+               <h1 className="text-white text-centre mx-auto  mb-3">You can update your name and image here</h1>
                 <form  onSubmit={HandleUpdateProfile}>
                     <label >
                         <span className=" font-semibold ml-3"> Name</span> <br />

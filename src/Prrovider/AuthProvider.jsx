@@ -1,6 +1,8 @@
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 export const AuthContext=createContext(null);
 
@@ -54,6 +56,7 @@ return signInWithPopup(auth,githubProvider)
             setLoading(false)
             console.log('usseffect',currentUser);
         })
+        Aos.init();
         return()=>{
             Unsubscribe()
         }

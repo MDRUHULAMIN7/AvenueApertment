@@ -1,19 +1,31 @@
-
+import { Link } from "react-router-dom";
+import icons from '../../../public/images/icon.png'
 
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10  bg-gradient-to-r from-cyan-500 to-blue-5000 text-base-content">
+            <footer className="footer px-20 py-10   bg-gradient-to-r from-cyan-500 to-blue-5000 text-base-content">
+              <nav>
+              <Link  to={'/'}>   <a className="   lg:text-4xl md:text-3xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
+        "> <h1 className="flex text-white"><img className="w-8 mr-3" src={icons} alt="" />
+       <span className="">A</span>veneu 
+        </h1> 
+        <h1 className="text-black 
+        animate__bounce">  <span className="">A</span>pertment</h1>
+       </a></Link>
+              </nav>
   <nav>
     <h6 className="footer-title">Services</h6> 
-    <a className="link link-hover">Apertments</a>
+    <Link to={'/estates'}><a className="link link-hover">Apertments</a> </Link>
+    
     <a className="link link-hover">Housing</a>
     <a className="link link-hover">Buildings</a>
     <a className="link link-hover">Constructions</a>
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
-    <a className="link link-hover">About us</a>
+    <Link to={'/about'}> <a className="link link-hover">About us</a></Link>
+   
     <a className="link link-hover">Contact</a>
     <a className="link link-hover">Projects</a>
     <a className="link link-hover">Press kit</a>
