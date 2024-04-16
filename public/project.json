@@ -1,0 +1,67 @@
+[
+    {
+      "image": "https://i.ibb.co/0q2V6GV/student.jpghttps://i.ibb.co/M7vVqqL/abby-rurenko-u-OYak90r4-L0-unsplash.jpg",
+      "title": "Serenity Cottage",
+      "location": "Hillside Retreat, California",
+      "budget": "$200/night",
+      "detail": "Cozy cottage with stunning views, perfect for nature lovers seeking tranquility and relaxation.",
+      "date": "2023-07-21"
+    },
+    {
+      "image": "https://i.ibb.co/M7vVqqL/abby-rurenko-u-OYak90r4-L0-unsplash.jpg",
+      "title": "Beachfront Villa",
+      "location": "Maui, Hawaii",
+      "budget": "$500/night",
+      "detail": "Luxurious villa steps away from the beach, offering breathtaking ocean views and premium amenities.",
+      "date": "2023-08-05"
+    },
+    {
+      "image": "https://i.ibb.co/JKyqqN1/henry-becerra-js-Hk0z-Jfv-Sc-unsplash.jpg",
+      "title": "City Loft",
+      "location": "Downtown Manhattan, New York",
+      "budget": "$300",
+      "detail": "Chic loft in the heart of the city, surrounded by iconic landmarks, dining, and entertainment options.",
+      "date": "2023-09-12"
+    },
+    {
+      "image": "https://i.ibb.co/SJg4kz6/leonardo-yip-f-PBD6-Tnnj2w-unsplash.jpg",
+      "title": "Mountain Chalet",
+      "location": "Swiss Alps",
+      "budget": "$400",
+      "detail": "Traditional chalet nestled in the majestic Alps, offering panoramic mountain views and alpine adventures.",
+      "date": "2023-10-02"
+    },
+    {
+      "image": "https://i.ibb.co/zVLbMkG/luca-bravo-h-Fz-Io-D0-F-i8-unsplash.jpg",
+      "title": "Lakeside Cabin",
+      "location": "Lake Tahoe, California",
+      "budget": "$250",
+      "detail": "Quaint cabin overlooking serene lake, ideal for outdoor enthusiasts with hiking, boating, and skiing nearby.",
+      "date": "2023-11-15"
+    },
+    {
+      "image": "https://i.ibb.co/Fgg1sMT/meritt-thomas-f-U2-KSE2-REfw-unsplash.jpg",
+      "title": "Desert Oasis",
+      "location": "Sahara Desert, Morocco",
+      "budget": "$150",
+      "detail": "Tranquil oasis amidst sand dunes, offering camel rides, stargazing, and authentic Moroccan hospitality.",
+      "date": "2023-12-03"
+    },
+    {
+      "image": "https://i.ibb.co/hCb4Ffv/camylla-battani-ashx-H5-TQ8-Go-unsplash.jpg",
+      "title": "Rustic Farmhouse",
+      "location": "Tuscany, Italy",
+      "budget": "$350",
+      "detail": "Charming farmhouse surrounded by vineyards, perfect for wine tasting and exploring picturesque Tuscan countryside.",
+      "date": "2023-12-20"
+    },
+    {
+      "image": "https://i.ibb.co/z8dycXW/roberto-nickson-6-FZf3yzuod-E-unsplash.jpg",
+      "title": "Treehouse Retreat",
+      "location": "Amazon Rainforest, Brazil",
+      "budget": "$200",
+      "detail": "Unique treehouse experience in the heart of the rainforest, offering birdwatching, jungle hikes, and eco-tours.",
+      "date": "2023-11-29"
+    }
+  ]
+  

@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="" >
             <Helmet><title>AvenueApartment | About</title></Helmet>
-            <div   className="text-center pt-20   bg-no-repeat bg-cover " style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
+            <div   className="text-center pt-10   bg-no-repeat bg-cover" style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
 
                 <div data-aos="zoom-in-right" data-aos-duration="1000" className="border-2 border-blue-500 w-fit py-12 px-5 mx-auto ">
                 <h1 className="text-5xl md:text-6xl lg:text-8xl font-semibold"><span className="text-white mx-5 ">About</span>us</h1>
@@ -15,7 +15,7 @@ const About = () => {
 Honest and to-the-point, our aim is <br /> to get things done with efficiency <br /> and skill.</p>
                 
                 </div>
-                <div className="lg:flex mt-48 py-16 gap-10 pb-8 px-10 space-y-3  bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="lg:flex mt-12 py-16 gap-10 pb-8 px-10 space-y-3  bg-gradient-to-r from-sky-500 to-indigo-500">
                     <div className="md:flex lg:w-1/2 gap-4"  data-aos="fade-up"
      data-aos-duration="2000">
                         <div className="md:w-1/2  gap-4">

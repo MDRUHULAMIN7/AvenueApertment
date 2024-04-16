@@ -8,22 +8,23 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'animate.css';
 
+
 // import { EffectFade } from 'swiper/modules';
 
 import 'swiper/css';
-import slide1 from "../../../public/images/single.jpg"
-import slide2 from "../../../public/images/townhouse.jpg"
-import slide3 from "../../../public/images/apartment.jpg"
-import slide4 from "../../../public/images/student.jpeg"
+
 import Estates from "./Estates";
+import About from "./About";
+
 
 
 const Home = () => {
 
     return (
-        <div className="bg-no-repeat  bg-contain" style={{backgroundImage:'url("https://i.ibb.co/XFpC7hc/istockphoto-1289383957-612x612.jpg")'}}>
+      <div className="">
+         <div className="bg-no-repeat    bg-contain   bg-[url('https://i.ibb.co/XFpC7hc/istockphoto-1289383957-612x612.jpg')]" >
           <Helmet> <title>AvenueApartment |Home</title></Helmet>
-          <div className="lg:flex gap-4 lg:pt-8 mx-10">
+          <div className="lg:flex gap-4 lg:pt-8 mx-10 bg-opacity-60 ">
             <div className="w-3/1 lg:leading-8 lg:mt-44 text-center mx-auto "    >
     <h1 className="lg:text-7xl md:text-6xl text-4xl font-bold animate__bounceIn"> Avenue 
           </h1>
@@ -44,15 +45,31 @@ const Home = () => {
        pagination={{ clickable: true }}
        scrollbar={{ draggable: true }}
     >
-      <SwiperSlide className="text-center"><img src={ slide1} alt="" className=" lg:h-[500px] md:h-[450px] h-[350px]  rounded-xl"/>
-      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Single Family</h1></SwiperSlide>
-      <SwiperSlide><img src={ slide2} className=" lg:h-[500px] md:h-[450px] h-[350px] rounded-xl" alt="" />
-      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Townhouses</h1></SwiperSlide>
-      <SwiperSlide><img className="  lg:h-[500px] md:h-[450px] h-[350px] rounded-xl" src={ slide3} alt="" />
-      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4 mx-auto text-center rounded-b-lg">Apertments</h1></SwiperSlide>
-      <SwiperSlide className="text-center"><img className="  lg:h-[500px] md:h-[450px] h-[350px] rounded-xl" src={ slide4} alt="" />
-      <h1 className="text-black text-2xl bg-purple-400 w-fit px-4  mx-auto text-center  rounded-b-lg">Student Livings</h1></SwiperSlide>
-     
+      <SwiperSlide className="text-center ">
+
+        <div className="bg-cover bg-no-repeat lg:h-[500px] md:h-[450px] h-[350px]  rounded-xl bg-[url('https://i.ibb.co/WKPSfd3/single.jpg')]">
+        <h1 className="text-white text-2xl md:text-4xl w-fit px-4 pt-72 md:pt-96 lg:pt-[430px] mx-auto text-center rounded-b-lg">Single Family</h1>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="text-center ">
+
+        <div className="bg-cover bg-no-repeat lg:h-[500px] md:h-[450px] h-[350px]   rounded-xl bg-[url('https://i.ibb.co/VwRD7gR/townhouse.jpg')]">
+        <h1 className="text-white text-2xl md:text-4xl w-fit px-4 pt-72 md:pt-96 lg:pt-[430px] mx-auto text-center rounded-b-lg">Townhouses</h1>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="text-center ">
+
+        <div className="bg-cover bg-no-repeat lg:h-[500px] md:h-[450px] h-[350px]  rounded-xl bg-[url('https://i.ibb.co/5LLsC83/apartment.jpg')]">
+        <h1 className="text-white text-2xl md:text-4xl w-fit px-4 pt-72 md:pt-96 lg:pt-[430px] mx-auto text-center rounded-b-lg">Apertments</h1>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="text-center ">
+
+        <div className=" bg-cover bg-no-repeat lg:h-[500px] md:h-[450px] h-[350px]  rounded-xl bg-[url('https://i.ibb.co/0q2V6GV/student.jpg')]">
+        <h1 className="text-green-600 text-2xl md:text-4xl px-4 pt-72 md:pt-96  lg:pt-[430px] mx-auto text-center rounded-b-lg">Students House</h1>
+        </div>
+      </SwiperSlide>
+      
       ...
     </Swiper>
 
@@ -67,11 +84,15 @@ const Home = () => {
 <div>
 <Estates></Estates>
 </div>
-
-
+<About></About>
+<div>
+  
+</div>
          
   
         </div>
+      </div>
+       
     );
 };
 

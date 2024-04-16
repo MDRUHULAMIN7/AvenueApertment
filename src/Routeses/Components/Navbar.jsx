@@ -48,7 +48,7 @@ toast.success('LogOut Succesfully')
           
             
             <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3' :''} to={"/about"} >About</NavLink>
+        isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3' :''} to={"/projects"} >Projects</NavLink>
           
           <NavLink className={({isActive,isPending})=>
 isPending ? 'text-blue-500' : isActive ? 'text-green-500 rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>
@@ -77,7 +77,7 @@ isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3 ' :''}
         
             
         <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3' :''} to={"/about"} >About</NavLink>
+        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3' :''} to={"/projects"} >Projects</NavLink>
           
         <NavLink className={({isActive,isPending})=>
 isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>

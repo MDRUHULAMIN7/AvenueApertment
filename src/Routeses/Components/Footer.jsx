@@ -3,7 +3,7 @@ import icons from '../../../public/images/icon.png'
 
 const Footer = () => {
     return (
-        <div>
+        <div className="">
             <footer className="footer px-20 py-10   bg-gradient-to-r from-cyan-500 to-blue-5000 text-base-content">
               <nav>
               <Link  to={'/'}>   <a className="   lg:text-4xl md:text-3xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
