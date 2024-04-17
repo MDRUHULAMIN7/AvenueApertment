@@ -15,8 +15,8 @@ const About = () => {
 Honest and to-the-point, our aim is <br /> to get things done with efficiency <br /> and skill.</p>
                 
                 </div>
-                <div className="lg:flex mt-12 py-16 gap-10 pb-8 px-10 space-y-3  bg-gradient-to-r from-sky-500 to-indigo-500">
-                    <div className="md:flex lg:w-1/2 gap-4"  data-aos="fade-up"
+                <div className="lg:flex mt-12 py-16 gap-10 pb-8 px-10 space-y-3  bg-gradient-to-r bg-violet-50">
+                    <div className="md:flex lg:w-1/2 gap-4 bg-opacity-60"  data-aos="fade-up "
      data-aos-duration="2000">
                         <div className="md:w-1/2  gap-4">
 
@@ -24,7 +24,7 @@ Honest and to-the-point, our aim is <br /> to get things done with efficiency <b
 
                         </div>
                         <div className="md:w-1/2 gap-4 my-auto"  >
-                            <h1 className="text-2xl text-white">
+                            <h1 className="text-2xl text-black">
 
                             Management
                             </h1>
@@ -45,7 +45,7 @@ They will have usually managed the property for a number of years, which means m
 
 </div>
 <div  className="md:w-1/2 gap-4 my-auto">
-    <h1 className="text-2xl text-white ">
+    <h1 className="text-2xl black ">
 
     Acquisitions
     </h1>

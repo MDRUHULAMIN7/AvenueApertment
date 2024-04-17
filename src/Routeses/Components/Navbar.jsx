@@ -35,7 +35,7 @@ toast.success('LogOut Succesfully')
 
     return (
       
-        <div className="navbar bg-gradient-to-r from-purple-500 to-pink-500">
+        <div className="navbar bg-cyan-50">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3 ' :''}
           </div>
 
           <Link  to={'/'}>   <a className="   lg:text-2xl md:text-xl text-xl font-bold  text-gradient-to-r from-cyan-500 to-blue-500 animate__animated animate__bounce 
-        "> <h1 className="flex text-white"><img className="w-6 mr-3" src={icons} alt="" />
+        "> <h1 className="flex text-gray-500"><img className="w-6 mr-3" src={icons} alt="" />
        <span className="">A</span>veneu 
         </h1> 
         <h1 className="text-black 
@@ -73,21 +73,21 @@ isPending ? 'text-blue-500' : isActive ? 'text-green-500  rounded-lg px-3 ' :''}
           <ul className="menu menu-horizontal px-1 text-xl font-semibold space-x-4">
            
           <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500 animate__bounceOutLeft' : isActive ? 'text-white animate__bounceOutLeft  rounded-lg px-3 ' :'' } to={"/"} >Home</NavLink>
+        isPending ? 'text-blue-500 animate__bounceOutLeft' : isActive ? 'text-orange-300 animate__bounceOutLeft  rounded-lg px-3 ' :'' } to={"/"} >Home</NavLink>
         
             
         <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3' :''} to={"/projects"} >Projects</NavLink>
+        isPending ? 'text-blue-500' : isActive ? 'text-orange-300  rounded-lg px-3' :''} to={"/projects"} >Projects</NavLink>
           
         <NavLink className={({isActive,isPending})=>
-isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>
+isPending ? 'text-blue-500' : isActive ? 'text-orange-300   rounded-lg px-3 ' :''} to={"/register"} >Register</NavLink>
  
          {user &&     <NavLink className={({isActive,isPending})=>
-        isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/updateprofile"} >Update Profile</NavLink> }
+        isPending ? 'text-blue-500' : isActive ? 'text-orange-300   rounded-lg px-3 ' :''} to={"/updateprofile"} >Update Profile</NavLink> }
 
         
 <NavLink className={({isActive,isPending})=>
-isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to={"/userprofile"} >User Profile</NavLink>
+isPending ? 'text-blue-500' : isActive ? 'text-orange-300   rounded-lg px-3 ' :''} to={"/userprofile"} >User Profile</NavLink>
 
 
         

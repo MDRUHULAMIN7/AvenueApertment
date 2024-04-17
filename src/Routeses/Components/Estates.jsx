@@ -17,11 +17,11 @@ const Estates = () => {
     },[])
     console.log(estates);
     return (
-        <div className="pt-20 mt-32   bg-gradient-to-r from-sky-500 to-indigo-500  " >
+        <div className="pt-20 mt-72   " >
            
             <h1 className="md:text-5xl text-3xl text-black font-semibold
             text-center " data-aos="fade-up-right"> Our Estate Categoryes</h1>
-            <div className="grid grid-cols-1 md:gap-10 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-10"> {
+            <div className="grid grid-cols-1 md:gap-10 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-10 my-10"> {
                 estates.map(estate=><Estate key={estate.id} 
                 estate={estate}></Estate>)
             }
