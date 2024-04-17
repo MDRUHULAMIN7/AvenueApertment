@@ -6,9 +6,9 @@ const Estate = ({estate}) => {
     return (
       
         <div className="mt-20">
-          <div className="card  bg-gradient-to-r  from-purple-500 to-pink-500 shadow-xl  "  data-aos="zoom-in" data-aos-duration="2000">
+          <div className="card  bg-gradient-to-r  from-purple-500 to-pink-500 shadow-xl  "  data-aos="zoom-in" data-aos-duration="1000">
          <h1 className="p-2 text-center md:text-3xl text-2xl font-bold text-primary">{segment_name}</h1>
-        <figure><img  data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1000" className="rounded-xl p-2 h-[250px] w-full" src={image} alt="Shoes" /></figure>
+        <figure><img  data-aos="zoom-in-left" data-aos-duration="1000"  className="rounded-xl p-2 h-[250px] w-full" src={image} alt="Shoes" /></figure>
         <hr />
         <div className="card-body" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500">
           <h2  className="card-title mb-5 md:text-3xl text-2xl text-primary font-semibold">{estate_title}</h2>

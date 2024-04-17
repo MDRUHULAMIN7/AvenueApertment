@@ -8,7 +8,7 @@ const About = () => {
             <Helmet><title>AvenueApartment | About</title></Helmet>
             <div   className="text-center pt-10   bg-no-repeat bg-cover" style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
 
-                <div data-aos="zoom-in-right" data-aos-duration="1000" className="border-2 border-blue-500 w-fit py-12 px-5 mx-auto ">
+                <div data-aos="zoom-in-right" data-aos-duration="1000" className="border-2 border-blue-500 w-fit  mx-3 py-12 px-5 md:mx-auto ">
                 <h1 className="text-5xl md:text-6xl lg:text-8xl font-semibold"><span className="text-white mx-5 ">About</span>us</h1>
                 <p className="text-xl text-black mt-20 text-center space-y-4 line-clamp-6">AvenueApartment is a residential property <br /> company operating in West and <br /> Central London.br <br />
 

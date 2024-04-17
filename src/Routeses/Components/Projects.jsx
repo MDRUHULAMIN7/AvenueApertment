@@ -12,7 +12,7 @@ console.log(projects);
         .then(data=>setProjects(data))
     },[])
     return (
-        <div className="mx-10">
+        <div className="mx-10 my-10">
             <h1 className="lg:text-6xl md:text-5xl text-3xl text-center mt-20 mb-5">Our Completed Projects</h1>
 
             <div className="  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
