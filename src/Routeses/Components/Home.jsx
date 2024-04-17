@@ -84,9 +84,9 @@ const Home = () => {
 <div>
 <Estates></Estates>
 </div>
-<About></About>
+
 <div>
-  
+<About></About> 
 </div>
          
   

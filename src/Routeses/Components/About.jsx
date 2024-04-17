@@ -1,11 +1,11 @@
-import { Helmet } from "react-helmet-async";
+
 
 import pic1 from "../../../public/images/room1.jpg"
 import pic2 from "../../../public/images/rooom 2.jpg"
 const About = () => {
     return (
         <div className="" >
-            <Helmet><title>AvenueApartment | About</title></Helmet>
+          
             <div   className="text-center pt-10   bg-no-repeat bg-cover" style={{backgroundImage:'url("https://i.ibb.co/d5px2FS/aboutr.jpg")'}}>
 
                 <div data-aos="zoom-in-right" data-aos-duration="1000" className="border-2 border-blue-500 w-fit  mx-3 py-12 px-5 md:mx-auto ">

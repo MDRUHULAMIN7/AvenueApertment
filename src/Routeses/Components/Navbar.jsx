@@ -120,13 +120,15 @@ isPending ? 'text-blue-500' : isActive ? 'text-white  rounded-lg px-3 ' :''} to=
 
             {
                 user ?
-<ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-purple-300 rounded-box w-52 space-y-4">
+<ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-purple-300 rounded-box w-64 ">
 
 
 {/*  */}
-<h1 className="text-xl text-center text-white">{user.displayName}</h1>
 
-<button className="btn-secondary rounded-full w-fit px-3 py-2 mx-auto bg-purple-800 text-white" onClick={HandleSignOut}>LogOut</button>
+<div className="flex"><h1 className="text-xl text-center text-white pl-2">{user.displayName}</h1>
+
+<button className="btn-secondary rounded-full w-fit px-3 py-2 mx-auto bg-purple-800 text-white" onClick={HandleSignOut}>LogOut</button></div>
+
 
 {/*  */}
 
